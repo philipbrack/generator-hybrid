@@ -150,7 +150,8 @@ function getHybridConfig() {
             return {}
         }
     } catch (e) {
-        console.log(e);
+        console.log("You do not have a .hybridconfig.json file in your home folder - it is being skipped\n");
+        return {}
     }
 }
 
